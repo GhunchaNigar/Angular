@@ -1,0 +1,190 @@
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    padding: 25px;
+    border-radius: 0px;
+    box-shadow: 0 0 6px 6px rgb(206, 202, 202);
+    background-color: white;
+  }
+  .btn-primary:not(.btn-link):not(.btn-flat) {
+    background-color: #009688;
+    color: rgba(255, 255, 255, 0.84);
+  }
+  
+  .btn:not(.btn-link):not(.btn-flat),
+  .btn-default:not(.btn-link):not(.btn-flat) {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.84);
+    color: rgba(0, 0, 0, 0.84);
+  }
+  .btn.btn-fab,
+  .btn.btn-fab .ripple-wrapper {
+    border-radius: 100%;
+  }
+  .btn.btn-fab,
+  .btn.btn-fab:hover {
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .btn.btn-fab {
+    margin: 0;
+    padding: 15px;
+    font-size: 26px;
+    width: 56px;
+    height: 56px;
+  }
+  .btn.btn-raised {
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn {
+    position: relative;
+    padding: 8px 30px;
+    border: 0;
+    margin: 10px 1px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.84);
+    transition: background-color 0.2s ease,
+      box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none !important;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: #009688;
+  }
+  
+  a {
+    color: #428bca;
+    text-decoration: none;
+  }
+  .dataTables_wrapper {
+    position: relative;
+    clear: both;
+    zoom: 1;
+  }
+  div {
+    display: block;
+    unicode-bidi: isolate;
+  }
+  .dataTables_wrapper .dataTables_length {
+    float: left;
+  }
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    cursor: default;
+  }
+  .dataTables_wrapper .dataTables_length,
+  .dataTables_wrapper .dataTables_filter,
+  .dataTables_wrapper .dataTables_info,
+  .dataTables_wrapper .dataTables_processing,
+  .dataTables_wrapper .dataTables_paginate {
+    color: #333333;
+  }
+  input,
+  select,
+  textarea {
+    max-width: 280px;
+  }
+  
+  input,
+  button,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  button,
+  select {
+    text-transform: none;
+  }
+  button,
+  input,
+  select,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+  }
+  .dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+    text-decoration: none;
+  }
+  table.dataTable,
+  table.dataTable th,
+  table.dataTable td {
+    box-sizing: content-box;
+  }
+  table.dataTable {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  .table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  table {
+    max-width: 100%;
+    background-color: transparent;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: rgb(224, 224, 224);
+  }
+  .table thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #141313;
+  }
+  .table thead > tr > th,
+  .table tbody > tr > th,
+  .table tfoot > tr > th,
+  .table thead > tr > td,
+  .table tbody > tr > td,
+  .table tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+  }
+  .table tbody > tr > td a {
+    color: #009688;
+  }
+  .table tbody > tr > td a:hover {
+    text-decoration: underline;
+  }
+  th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+    unicode-bidi: isolate;
+  }
+  

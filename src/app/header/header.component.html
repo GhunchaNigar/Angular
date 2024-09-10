@@ -1,19 +1,56 @@
-<div class="navbar">
-    <ul>
-      <li>
-        <button>
-          <a
-            href="#"
-            style="font-family: 'Arial', 'Helvetica', sans-serif; font-size: 16px"
-            >EW POS</a
-          >
-        </button>
-      </li>
-      <li>
-        <button><a href="#">Products</a></button>
-      </li>
-      <li>
-        <button><a href="#">Log in</a></button>
-      </li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">East & West</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav" >
+        <li class="nav-item" >
+          <a class="nav-link active" aria-current="page" [routerLink]="['/Products']" >Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Categories']">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Sales']">Sales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Expenses']">Expenses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Stock']">Stock</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Report']">Report</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Ledger']">Ledger</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Dues']">Dues</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Partners-Profit']">Partners Profit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/']" style="margin-right: 85px;">Activity Logs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Partners']" style="margin-left: 55px;">Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Users']">Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/Manage']">Hello Saif..!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="float: end;">Log off</a>
+        </li>
+
+
+      </ul>
+    </div>
   </div>
+</nav>

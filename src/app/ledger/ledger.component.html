@@ -1,0 +1,356 @@
+<app-header></app-header>
+<div class="container">
+  <a
+    href="/productCategory/Create"
+    class="btn btn-primary btn-fab btn-raised mdi-content-add"
+    style="
+      float: right;
+      position: relative;
+      top: 65px;
+      right: 45px;
+      background-color: #009688;
+      color: rgba(255, 255, 255, 0.84);
+    "
+  >
+    <div
+      class="ripple-wrapper"
+      style="margin-bottom: 20px"
+    >
+      +
+    </div></a
+  >
+  <div class="card" style="height: 100%">
+    <h3>Ledger/Customers</h3>
+    <h6 style="float: right;">Total dues: 7354.50/-</h6>
+    <select id="customerID" name="customerID" onchange="SelectedIndexChanged()">
+      <option value="">Select customer</option>
+      <option value="3059bb88-265d-4991-b37b-c61930b9d7ab">feb12</option>
+      <option value="ac0dc1c3-5331-4871-a84b-a070cf6329f2">karim</option>
+      <option value="e673b92d-e6df-4ba9-b6e7-fe26294505c1">m sunny khan</option>
+      <option value="a2d33d39-aba2-4c2f-a41d-35a171a05245">
+        newcust 10feb
+      </option>
+      <option value="8f66d226-6b29-48fc-9580-3f04b88eb8d5">saif</option>
+      <option value="51e800c4-a998-4d96-87e4-51d9877635d6">saif</option>
+      <option value="03220fd3-032a-449c-857f-ae849d346e3f">saif test</option>
+      <option value="861d9341-17bb-4f41-9739-b59c3676568f">Tayyab</option>
+      <option value="d4784389-9ce6-45a3-81ad-6f1dcc2ab1ac">wwww</option>
+    </select>
+    <button disabled="" class="btn-xs btn-secondary">Add Amount</button>
+    <div
+      id="categoryGrid_wrapper"
+      style="font-size: 13px"
+      class="dataTables_wrapper no-footer"
+    >
+      <div class="dataTables_length" id="categoryGrid_length">
+        <label
+          >Show
+          <select
+            name="categoryGrid_length"
+            aria-controls="categoryGrid"
+            class=""
+          >
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+          entries</label
+        >
+      </div>
+      <div id="categoryGrid_filter" class="dataTables_filter">
+        <label
+          >Search:<input
+            type="search"
+            class=""
+            placeholder=""
+            aria-controls="categoryGrid"
+        /></label>
+      </div>
+      <table
+        id="ladgerGrid"
+        class="table table-striped table-hover dataTable no-footer"
+        role="grid"
+        aria-describedby="ladgerGrid_info"
+      >
+        <thead>
+          <tr role="row">
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="ladgerGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                    Customer
+                : activate to sort column ascending"
+              style="width: 134px"
+            >
+              Customer
+            </th>
+            <th
+              style="width: 304px"
+              class="sorting"
+              tabindex="0"
+              aria-controls="ladgerGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                    Products
+                : activate to sort column ascending"
+            >
+              Products
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="ladgerGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                    Total Amount
+                : activate to sort column ascending"
+              style="width: 110px"
+            >
+              Total Amount
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="ladgerGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                    Paid
+                : activate to sort column ascending"
+              style="width: 60px"
+            >
+              Paid
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="ladgerGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                    Remaining
+                : activate to sort column ascending"
+              style="width: 89px"
+            >
+              Remaining
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="ladgerGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                    Sale date
+                : activate to sort column ascending"
+              style="width: 220px"
+            >
+              Sale date
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr role="row" class="odd">
+            <td>feb12</td>
+            <td>
+              <a
+                href=" "
+                >1 x product one  Rs.150.00 each
+              </a>
+            </td>
+            <td>142.50</td>
+            <td>120.00</td>
+            <td>22.50</td>
+            <td id="1">
+              Sat Aug 10 2024 1:56:29 PM
+            </td>
+          </tr>
+          <tr role="row" class="even">
+            <td>Aftakhar Ul Hassan</td>
+            <td>
+              <a
+                href=" "
+                >1 x may16 two  Rs.3000.00 each
+              </a>
+            </td>
+            <td>3000.00</td>
+            <td>3000.00</td>
+            <td>0.00</td>
+            <td id="2">
+              Sat Jul 13 2024 12:27:59 AM
+            </td>
+          </tr>
+          <tr role="row" class="odd">
+            <td>Tayyab</td>
+            <td>
+              <a
+                href=""
+                >2 x Cipro  Rs.150 each
+              </a>
+            </td>
+            <td>270.00</td>
+            <td>270.00</td>
+            <td>0.00</td>
+            <td id="3">
+              Fri Jun 28 2024 5:19:38 AM
+            </td>
+          </tr>
+          <tr role="row" class="even">
+            <td>Mohammad Rafiq</td>
+            <td>
+              <a
+                href=""
+                >1 x may16 two  Rs.120.00 each
+              </a>
+            </td>
+            <td>20000.00</td>
+            <td>15000.00</td>
+            <td>5000.00</td>
+            <td id="4">
+              Sun May 26 2024 12:06:14 AM
+            </td>
+          </tr>
+          <tr role="row" class="odd">
+            <td>Mohammad Rafiq</td>
+            <td>
+              <a
+                href=" "
+                >3 x may16 two  Rs.3000.00 each 4 x may16 two  Rs.120.00 each
+              </a>
+            </td>
+            <td>8532.00</td>
+            <td>8000.00</td>
+            <td>532.00</td>
+            <td id="5">
+              Fri May 24 2024 12:34:19 AM
+            </td>
+          </tr>
+          <tr role="row" class="even">
+            <td>saif</td>
+            <td>
+              <a
+                href=" "
+                >3 x rprod may04  Rs.2000.00 each
+              </a>
+            </td>
+            <td>5500.00</td>
+            <td>4000.00</td>
+            <td>1500.00</td>
+            <td id="6">
+              Sat May 04 2024 12:57:26 AM
+            </td>
+          </tr>
+          <tr role="row" class="odd">
+            <td>feb12</td>
+            <td>
+              <a
+                href=" "
+                >2 x www  Rs.1500.00 each
+              </a>
+            </td>
+            <td>2500.00</td>
+            <td>2500.00</td>
+            <td>0.00</td>
+            <td id="7">
+              Tue Feb 13 2024 12:37:47 AM
+            </td>
+          </tr>
+          <tr role="row" class="even">
+            <td>wwww</td>
+            <td>
+              <a
+                href=" "
+                >2 x www  Rs.1500.00 each
+              </a>
+            </td>
+            <td>2500.00</td>
+            <td>2500.00</td>
+            <td>0.00</td>
+            <td id="8">
+              Mon Feb 12 2024 11:29:35 PM
+            </td>
+          </tr>
+          <tr role="row" class="odd">
+            <td>newcust 10feb</td>
+            <td>
+              <a
+                href=" "
+                >1 x product one  Rs.150.00 each
+              </a>
+            </td>
+            <td>135.00</td>
+            <td>135.00</td>
+            <td>0.00</td>
+            <td id="9">
+              Sun Feb 11 2024 9:20:38 PM
+            </td>
+          </tr>
+          <tr role="row" class="even" style="border: 1px solid black;">
+            <td>karim</td>
+            <td>
+              <a
+                href=" "
+                >1 x product one  Rs.150.00 each
+              </a>
+            </td>
+            <td>500.00</td>
+            <td>500.00</td>
+            <td>0.00</td>
+            <td id="10">
+              Sun Feb 11 2024 8:54:45 PM
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="dataTables_info"
+        id="categoryGrid_info"
+        role="status"
+        aria-live="polite"
+        style="margin-top: 10px; display: inline-block"
+      >
+        Showing 1 to 10 of 15 entries
+      </div>
+      <div
+        class="dataTables_paginate paging_simple_numbers"
+        id="categoryGrid_paginate"
+        style="display: inline-block; float: right; margin-top: 10px"
+      >
+        <a
+          class="paginate_button previous disabled"
+          aria-controls="categoryGrid"
+          data-dt-idx="0"
+          tabindex="0"
+          id="categoryGrid_previous"
+          style="color: rgb(99, 97, 97)"
+          >Previous</a
+        ><span
+          ><button
+            style="
+              border: 1px solid rgb(202, 202, 202);
+              width: 25px;
+              height: 25px;
+              margin: 5px;
+            "
+          >
+            1
+          </button></span
+        ><a
+          class="paginate_button next disabled"
+          aria-controls="categoryGrid"
+          data-dt-idx="2"
+          tabindex="0"
+          id="categoryGrid_next"
+          style="color: rgb(99, 97, 97)"
+          >Next</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

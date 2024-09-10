@@ -1,0 +1,346 @@
+<app-header></app-header>
+<div class="container">
+  <div class="card" style="height: 100%">
+    <h3>Sales history</h3>
+    <div
+      id="categoryGrid_wrapper"
+      style="font-size: 13px"
+      class="dataTables_wrapper no-footer"
+    >
+      <div class="dataTables_length" id="categoryGrid_length">
+        <label
+          >Show
+          <select
+            name="categoryGrid_length"
+            aria-controls="categoryGrid"
+            class=""
+          >
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+          entries</label
+        >
+      </div>
+      <div id="categoryGrid_filter" class="dataTables_filter">
+        <label
+          >Search:<input
+            type="search"
+            class=""
+            placeholder=""
+            aria-controls="categoryGrid"
+        /></label>
+      </div>
+      <table
+        id="salesGrid"
+        class="table table-striped table-hover dataTable no-footer"
+        role="grid"
+        aria-describedby="salesGrid_info"
+        style="width: 1132px"
+      >
+        <thead>
+          <tr role="row">
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="salesGrid"
+              rowspan="1"
+              colspan="1"
+              style="width: 71px"
+              aria-label="
+                    Invoice ID
+                : activate to sort column ascending"
+            >
+              Invoice ID
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="salesGrid"
+              rowspan="1"
+              colspan="1"
+              style="width: 124px"
+              aria-label="
+                    Customer's Name
+                : activate to sort column ascending"
+            >
+              Customer's Name
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="salesGrid"
+              rowspan="1"
+              colspan="1"
+              style="width: 80px"
+              aria-label="
+                    Contact
+                : activate to sort column ascending"
+            >
+              Contact
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="salesGrid"
+              rowspan="1"
+              colspan="1"
+              style="width: 97px"
+              aria-label="
+                    CNIC
+                : activate to sort column ascending"
+            >
+              CNIC
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="salesGrid"
+              rowspan="1"
+              colspan="1"
+              style="width: 446px"
+              aria-label="
+                    Items
+                : activate to sort column ascending"
+            >
+              Items
+            </th>
+            <th
+              style="width: 100px"
+              class="sorting"
+              tabindex="0"
+              aria-controls="salesGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="Actions: activate to sort column ascending"
+            >
+              Actions
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr role="row" class="odd">
+            <td>1067</td>
+            <td>feb12</td>
+            <td>03459854256</td>
+            <td>12542</td>
+            <td>1 x product one  Rs.150.00 each</td>
+            <td><a href="">Details</a> | <a href="">Delete</a></td>
+          </tr>
+          <tr role="row" class="even">
+            <td>1067</td>
+            <td>Aftakhar Ul Hassan</td>
+            <td>03467857818</td>
+            <td></td>
+            <td>1 x may16 two  Rs.3000.00 each</td>
+            <td>
+              <a
+                href="/transactions/details?Id=b157d5a3-4108-4b88-9d99-1a32816d2ed2"
+                >Details</a
+              >
+              | <a href="">Delete</a>
+            </td>
+          </tr>
+          <tr role="row" class="odd">
+            <td>1066</td>
+            <td>Tayyab</td>
+            <td>03447281642</td>
+            <td></td>
+            <td>2 x Cipro Rs.150 each</td>
+            <td>
+              <a
+                href="/transactions/details?Id=bcc018e2-959b-468f-a415-556f361f38a0"
+                >Details</a
+              >
+              |
+              <a
+                href="/transactions/Delete?Id=bcc018e2-959b-468f-a415-556f361f38a0"
+                >Delete</a
+              >
+            </td>
+          </tr>
+          <tr role="row" class="even">
+            <td>1064</td>
+            <td>Mohammad Rafiq</td>
+            <td>03428641646</td>
+            <td></td>
+            <td>1 x may16 two Rs.120.00 each</td>
+            <td>
+              <a
+                href="/transactions/details?Id=049173e1-1b5b-4e19-aca1-16774b909a47"
+                >Details</a
+              >
+              |
+              <a
+                href="/transactions/Delete?Id=049173e1-1b5b-4e19-aca1-16774b909a47"
+                >Delete</a
+              >
+            </td>
+          </tr>
+          <tr role="row" class="odd">
+            <td>1063</td>
+            <td>Mohammad Rafiq</td>
+            <td>03428641646</td>
+            <td></td>
+            <td>3 x may16 two Rs.3000.00 each 4 x may16 two Rs.120.00 each</td>
+            <td>
+              <a
+                href="/transactions/details?Id=117da72d-8978-45c7-a229-14748b297f79"
+                >Details</a
+              >
+              |
+              <a
+                href="/transactions/Delete?Id=117da72d-8978-45c7-a229-14748b297f79"
+                >Delete</a
+              >
+            </td>
+          </tr>
+          <tr role="row" class="even">
+            <td>1001</td>
+            <td>saif</td>
+            <td>04345989524</td>
+            <td></td>
+            <td>3 x rprod may04 Rs.2000.00 each</td>
+            <td>
+              <a
+                href="/transactions/details?Id=6cb14591-22ad-4986-9e43-2e32a19c60f1"
+                >Details</a
+              >
+              |
+              <a
+                href="/transactions/Delete?Id=6cb14591-22ad-4986-9e43-2e32a19c60f1"
+                >Delete</a
+              >
+            </td>
+          </tr>
+          <tr role="row" class="odd">
+            <td>1009</td>
+            <td>feb12</td>
+            <td>03459854256</td>
+            <td>12542</td>
+            <td>2 x www Rs.1500.00 each</td>
+            <td>
+              <a
+                href="/transactions/details?Id=687ac00d-d5fa-44d4-abb5-3f8505e0db99"
+                >Details</a
+              >
+              |
+              <a
+                href="/transactions/Delete?Id=687ac00d-d5fa-44d4-abb5-3f8505e0db99"
+                >Delete</a
+              >
+            </td>
+          </tr>
+          <tr role="row" class="even">
+            <td>1008</td>
+            <td>wwww</td>
+            <td>03458521420</td>
+            <td>121032152485</td>
+            <td>2 x www Rs.1500.00 each</td>
+            <td>
+              <a
+                href="/transactions/details?Id=d63f9073-da7c-4bf6-81c4-8b7e0095e8a3"
+                >Details</a
+              >
+              |
+              <a
+                href="/transactions/Delete?Id=d63f9073-da7c-4bf6-81c4-8b7e0095e8a3"
+                >Delete</a
+              >
+            </td>
+          </tr>
+          <tr role="row" class="odd">
+            <td>1007</td>
+            <td>newcust 10feb</td>
+            <td>03459891810</td>
+            <td>1210314579581</td>
+            <td>1 x product one Rs.150.00 each</td>
+            <td>
+              <a
+                href="/transactions/details?Id=e207dc08-751d-495b-95fe-7cb9e6835aaf"
+                >Details</a
+              >
+              |
+              <a
+                href="/transactions/Delete?Id=e207dc08-751d-495b-95fe-7cb9e6835aaf"
+                >Delete</a
+              >
+            </td>
+          </tr>
+          <tr role="row" class="even" style="border-bottom: 1px solid black ;">
+            <td>1006</td>
+            <td>karim</td>
+            <td>03459824102</td>
+            <td></td>
+            <td>1 x product one Rs.150.00 each</td>
+            <td>
+              <a
+                href="/transactions/details?Id=0ff38ab7-4bdc-40d4-b33d-686aa7ca4387"
+                >Details</a
+              >
+              |
+              <a
+                href="/transactions/Delete?Id=0ff38ab7-4bdc-40d4-b33d-686aa7ca4387"
+                >Delete</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="dataTables_info"
+        id="categoryGrid_info"
+        role="status"
+        aria-live="polite"
+        style="margin-top: 10px; display: inline-block"
+      >
+        Showing 1 to 10 of 15 entries
+      </div>
+      <div
+        class="dataTables_paginate paging_simple_numbers"
+        id="categoryGrid_paginate"
+        style="display: inline-block; float: right; margin-top: 10px"
+      >
+        <a
+          class="paginate_button previous disabled"
+          aria-controls="categoryGrid"
+          data-dt-idx="0"
+          tabindex="0"
+          id="categoryGrid_previous"
+          style="color: rgb(99, 97, 97)"
+          >Previous</a
+        ><span
+          ><button
+            style="
+              border: 1px solid rgb(202, 202, 202);
+              width: 25px;
+              height: 25px;
+              margin: 5px;
+            "
+          >
+            1
+          </button>
+          <button
+            style="
+              border: 1px solid rgb(202, 202, 202);
+              width: 25px;
+              height: 25px;
+              margin: 5px;
+            "
+          >
+            2
+          </button></span
+        ><a
+          class="paginate_button next disabled"
+          aria-controls="categoryGrid"
+          data-dt-idx="2"
+          tabindex="0"
+          id="categoryGrid_next"
+          style="color: rgb(99, 97, 97)"
+          >Next</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

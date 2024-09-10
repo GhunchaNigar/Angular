@@ -1,0 +1,209 @@
+<app-header></app-header>
+<div class="container">
+  <a
+    href="/productCategory/Create"
+    class="btn btn-primary btn-fab btn-raised mdi-content-add"
+    style="
+      float: right;
+      position: relative;
+      top: 65px;
+      right: 45px;
+      background-color: #009688;
+      color: rgba(255, 255, 255, 0.84);
+    "
+  >
+    <div
+      class="ripple-wrapper"
+      style="margin-bottom: 20px"
+    >
+      +
+    </div></a
+  >
+  <div class="card" style="height: 100%">
+    <h3>Expenses log</h3>
+    <div
+      id="categoryGrid_wrapper"
+      style="font-size: 13px"
+      class="dataTables_wrapper no-footer"
+    >
+      <div class="dataTables_length" id="categoryGrid_length">
+        <label
+          >Show
+          <select
+            name="categoryGrid_length"
+            aria-controls="categoryGrid"
+            class=""
+          >
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+          entries</label
+        >
+      </div>
+      <div id="categoryGrid_filter" class="dataTables_filter">
+        <label
+          >Search:<input
+            type="search"
+            class=""
+            placeholder=""
+            aria-controls="categoryGrid"
+        /></label>
+      </div>
+      <table
+        class="table dataTable no-footer"
+        id="expensesGrid"
+        role="grid"
+        aria-describedby="expensesGrid_info"
+      >
+        <thead>
+          <tr role="row">
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="expensesGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                        ExpenseType
+                    : activate to sort column ascending"
+              style="width: 156px"
+            >
+              ExpenseType
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="expensesGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                        Description
+                    : activate to sort column ascending"
+              style="width: 137px"
+            >
+              Description
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="expensesGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                        Amount
+                    : activate to sort column ascending"
+              style="width: 101px"
+            >
+              Amount
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="expensesGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                        Logged By
+                    : activate to sort column ascending"
+              style="width: 148px"
+            >
+              Logged By
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="expensesGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="
+                        DateTime
+                    : activate to sort column ascending"
+              style="width: 270px"
+            >
+              DateTime
+            </th>
+            <th
+              class="sorting"
+              tabindex="0"
+              aria-controls="expensesGrid"
+              rowspan="1"
+              colspan="1"
+              aria-label="Actions: activate to sort column ascending"
+              style="width: 103px"
+            >
+              Actions
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr role="row" class="odd" style="border-bottom: 1px solid black">
+            <td>
+              <a href="/expenses/Details/19cd74e7-2ef9-438b-a88b-2bc89d1e815f">
+                SALARY
+              </a>
+            </td>
+            <td>EMPLOYEE</td>
+            <td>10000</td>
+            <td>Saif ur Rehman</td>
+            <td id="19cd74e7-2ef9-438b-a88b-2bc89d1e815f">
+              Fri Jun 28 2024 5:14:37 AM
+            </td>
+            <td>
+              <a href="/expenses/Edit/19cd74e7-2ef9-438b-a88b-2bc89d1e815f"
+                >Edit</a
+              >
+              <a href="/expenses/Delete/19cd74e7-2ef9-438b-a88b-2bc89d1e815f"
+                >Delete</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="dataTables_info"
+        id="categoryGrid_info"
+        role="status"
+        aria-live="polite"
+        style="margin-top: 10px; display: inline-block"
+      >
+        Showing 1 to 1 of 1 entries
+      </div>
+      <div
+        class="dataTables_paginate paging_simple_numbers"
+        id="categoryGrid_paginate"
+        style="display: inline-block; float: right; margin-top: 10px"
+      >
+        <a
+          class="paginate_button previous disabled"
+          aria-controls="categoryGrid"
+          data-dt-idx="0"
+          tabindex="0"
+          id="categoryGrid_previous"
+          style="color: rgb(99, 97, 97)"
+          >Previous</a
+        ><span
+          ><button
+            style="
+              border: 1px solid rgb(202, 202, 202);
+              width: 25px;
+              height: 25px;
+              margin: 5px;
+            "
+          >
+            1
+          </button></span
+        ><a
+          class="paginate_button next disabled"
+          aria-controls="categoryGrid"
+          data-dt-idx="2"
+          tabindex="0"
+          id="categoryGrid_next"
+          style="color: rgb(99, 97, 97)"
+          >Next</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

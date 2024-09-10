@@ -10,10 +10,10 @@
       </button>
     </li>
     <li>
-      <button><a href="#">Products</a></button>
+      <button><a  href="#">Products</a></button>
     </li>
     <li>
-      <button><a href="#">Log in</a></button>
+      <button><a  href="#">Log in</a></button>
     </li>
   </ul>
 </div>
@@ -48,9 +48,10 @@
               <p>
                 <span *ngIf="pass && pass.invalid && pass.touched"
                   >The Password field is Required.</span
-                ><a [routerLink]="['/ForgetPassword']" style="color: #009688">Forgot Password</a>
-                <router-outlet></router-outlet>
-                
+                ><a [routerLink]="['/ForgetPassword']" style="color: #009688"
+                  >Forgot Password</a
+                >
+            
               </p>
             </div>
           </div>
@@ -58,7 +59,7 @@
           <div style="display: block">
             <div class="input-4">
               <a
-                href="#"
+                [routerLink]="['/Products']"
                 class="btn btn-primary"
                 style="
                   border: none;
@@ -70,6 +71,7 @@
                 "
                 >LOG IN</a
               >
+              
             </div>
           </div>
         </div>
@@ -77,4 +79,3 @@
     </div>
   </div>
 </div>
-

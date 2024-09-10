@@ -1,0 +1,52 @@
+<app-header></app-header>
+<div class="container">
+  <div class="card" style="height: 100%;">
+    <h3>Manage</h3>
+    <p>
+        Change your account settings
+    </p>
+    <hr>
+    <form action="/Manage" class="form-horizontal" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="PEgoMI8EHs0-9ATSAaM1HIG2kRsF-gDvrX4W4gUpVZbNKjG-7Ptz3mYGEfIA1417qQkxCPlVwYOQfQKGofNZ4pmCUf1X0oI1V_2f1DTp0-Y1">        <dl class="dl-horizontal">
+            
+        <input data-val="true" data-val-required="The UserID field is required." id="UserID" name="UserID" type="hidden" value="11209174-d681-49bb-a02b-7de915ae09f8">
+        <input data-val="true" data-val-length="The Password must be at least 6 characters long." data-val-length-max="200" data-val-length-min="6" data-val-required="The Password field is required." id="Password" name="Password" type="hidden" value="rteeETwwMmFBYurLdJ85M3PrfiDEEgddHAHoR9/9mxs=">
+        <dt>UserName:</dt>
+        <dd>
+            <b>saif.ciit</b>
+        </dd>
+        <dt>Email:</dt>
+        <dd>
+            <input class="form-control text-box single-line" data-val="true" data-val-email="The Email address field is not a valid e-mail address." id="Email" name="Email" type="email" value="saif.ciit@gmail.com">
+            <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+        </dd>
+
+        <dt>
+            First Name
+        </dt>
+        <dd>
+            <input class="form-control text-box single-line" id="FirstName" name="FirstName" type="text" value="Saif">
+            <span class="field-validation-valid text-danger" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+        </dd>
+        <dt>
+            Last Name
+        </dt>
+        <dd>
+            <input class="form-control text-box single-line" id="LastName" name="LastName" type="text" value="ur Rehman">
+            <span class="field-validation-valid text-danger" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+        </dd>
+
+        <dt>Password:</dt>
+        <dd>
+            <a href="/Manage/ChangePassword">Change your password</a>
+        </dd>
+        <dt></dt>
+        <dd>
+
+            <input type="submit" value="Save" class="btn btn-primary">
+        </dd>
+    </dl>
+</form>
+  </div>
+</div>
+
+

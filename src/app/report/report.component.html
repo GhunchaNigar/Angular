@@ -1,0 +1,104 @@
+<app-header></app-header>
+<div class="container">
+  <div class="card" style="height: 100%">
+    <h3>CustomReport</h3>
+    <hr />
+    <div class="container" style="font-size: 14px">
+      <div class="form-group" style="display: flex; margin-right: 15px">
+        <div class="control-label col-md-2">
+          <b>Start Time </b>
+          <span style="color: red; font-size: x-large">*</span>
+        </div>
+        <div class="col-lg-3" style="margin-right: 45px">
+          <input
+            class="form-control text-box single-line"
+            data-val="true"
+            data-val-date="The field StartTime must be a date."
+            data-val-required="The StartTime field is required."
+            id="txtDiscount"
+            name="StartTime"
+            type="date"
+            value=""
+          />
+          <span
+            class="field-validation-valid text-danger"
+            data-valmsg-for="StartTime"
+            data-valmsg-replace="true"
+          ></span>
+        </div>
+        <div class="control-label col-md-2" style="margin-left: 45px">
+          <b>End Time </b> <span style="color: red; font-size: x-large">*</span>
+        </div>
+        <div class="col-lg-3">
+          <input
+            class="form-control text-box single-line"
+            data-val="true"
+            data-val-date="The field EndTime must be a date."
+            data-val-required="The EndTime field is required."
+            id="txtTotal"
+            name="EndTime"
+            type="date"
+            value=""
+          />
+          <span
+            class="field-validation-valid text-danger"
+            data-valmsg-for="EndTime"
+            data-valmsg-replace="true"
+          ></span>
+        </div>
+      </div>
+
+      <div class="form-group" style="display: flex">
+        <div class="control-label col-md-2"><b>Total Cost </b></div>
+        <div class="col-lg-1">
+          <input type="checkbox" name="TotalCostChk" />
+        </div>
+        <div class="control-label col-md-2"><b>Total Sale</b></div>
+        <div class="col-lg-1">
+          <input type="checkbox" name="TotalSaleChk" />
+        </div>
+        <div class="control-label col-md-2"><b>Profit/Transactions </b></div>
+        <div class="col-lg-1">
+          <input type="checkbox" name="SaleItemsChk" />
+        </div>
+        <div class="control-label col-md-2"><b>Expenses </b></div>
+        <div class="col-lg-1">
+          <input type="checkbox" name="ExpensesChk" />
+        </div>
+      </div>
+      <div class="form-group" style="display: flex">
+        <div class="control-label col-md-2"><b>By User </b></div>
+        <div class="col-lg-3">
+          <input type="checkbox" id="chkUser" name="ByUserChk" />
+        </div>
+        <div style="display: none" class="control-label col-md-2 userddp">
+          <b>Select User </b>
+          <span style="color: red; font-size: x-large">*</span>
+        </div>
+        <div style="display: none" class="col-lg-3 userddp">
+          <select class="form-control" id="UserID" name="UserID">
+            <option value="11209174-d681-49bb-a02b-7de915ae09f8">
+              Saif ur Rehman
+            </option>
+          </select>
+          <span
+            class="field-validation-valid text-danger"
+            data-valmsg-for="UserID"
+            data-valmsg-replace="true"
+          ></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <div style="padding-right: 15%" class="pull-right">
+          <a
+            href="/Report/CustomReport"
+            class="btn btn-default"
+            style="color: black"
+            >CLEAR</a
+          >
+          <button type="button" class="btn btn-primary">Generate Report</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

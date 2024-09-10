@@ -1,0 +1,142 @@
+.container {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  width: 90%;
+  height: 50%;
+  padding: 25px;
+  border-radius: 0px;
+  box-shadow: 0 0 6px 6px rgb(206, 202, 202);
+  background-color: white;
+  height: 380px;
+}
+p {
+  margin: 0 0 10px;
+}
+a,
+a:hover,
+a:focus {
+  color: #009688;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+dl {
+  margin-bottom: 20px;
+}
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+.dl-horizontal dt {
+  white-space: normal;
+}
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+t {
+  font-weight: bold;
+}
+
+dt,
+dd {
+  line-height: 1.428571429;
+}
+
+body .well,
+.container .well,
+.container-fluid .well,
+body .well:not([class^="well well-material-"]),
+.container .well:not([class^="well well-material-"]),
+.container-fluid .well:not([class^="well well-material-"]),
+body .well .form-control,
+.container .well .form-control,
+.container-fluid .well .form-control,
+body .well:not([class^="well well-material-"]) .form-control,
+.container .well:not([class^="well well-material-"]) .form-control,
+.container-fluid .well:not([class^="well well-material-"]) .form-control {
+  color: rgba(0, 0, 0, 0.84);
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: RobotoDraft, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  background-color: #fff;
+}
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+}
+dd {
+  margin-left: 0;
+}
+
+dt,
+dd {
+  line-height: 1.428571429;
+}
+
+dd {
+  display: block;
+  margin-inline-start: 40px;
+  unicode-bidi: isolate;
+}

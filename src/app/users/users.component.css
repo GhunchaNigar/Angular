@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    padding: 25px;
+    border-radius: 0px;
+    box-shadow: 0 0 6px 6px rgb(206, 202, 202);
+    background-color: white;
+  }
+
+  a,
+  a:hover,
+  a:focus {
+    color: #009688;
+  }
+  
+  a {
+    color: #428bca;
+    text-decoration: none;
+  }
+
+  .table {
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+p{
+  margin: 0px;
+  padding: 0px;
+}
+ a {
+    color: #009688;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+    unicode-bidi: isolate;
+  }
+  
